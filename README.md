@@ -15,10 +15,10 @@ DaoCloud
 	Twitter-Bootstrap (SASS)
 
 <h3>-Notes</h3>
-	Using *Indented Syntax* .sass file for landing-page (index.html styles)
-
+	* Using *Indented Syntax* .sass file for landing-page (index.html styles)
+	* Used Scout to watch SAS Files
 <h3>-Configurations</h3>
 	SASS input/output directory for the main stylesheet (style.sass/style.css) 
 		* SASS Input Directory = "\stylesheets\"
 		* CSS OutPut Directory = "\css\"
-Used Scout to watch SAS Files
+
