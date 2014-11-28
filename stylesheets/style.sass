@@ -65,7 +65,10 @@ h1, h2
 
 /*****************************************************************/
 
-/************************ Button Styles *************************/	
+/************************ Button/Links Styles *************************/	
+
+
+
 .btn1, input[type="submit"]
 	background-color: $btnBgc
 	color: $btnCol
@@ -77,7 +80,9 @@ h1, h2
 	display: inline-block
 	font-weight: 600
 	margin: 20px 0px
-
+	text-decoration: none
+	&:hover
+		background-image: -webkit-linear-gradient(top, yellow 0%, #e5e500 10%, #cccc00 100%)
 input[type="submit"]
 	line-height: 3px
 
@@ -152,6 +157,8 @@ header.navbar
 	color: $state-info-text	 !important
 	padding: 5px 15px
 	border-radius: 4px
+	
+		
 
 /*****************************************************************/
 
@@ -178,11 +185,14 @@ header.navbar
 		@media (min-width: 0px) and (max-width: $screen-md)
 			background-position: center center !important
 		div
-			position: relative
+			position: absolute
 			top: 415px
+			left: 0px
+			right: 0px
 			.btn1
 				margin: 0 auto
 				display: block
+				width: 184px
 	>div:nth-of-type(2)
 		background-image: url("../images/background_Signup.png")
 		background-position: right center
@@ -191,6 +201,12 @@ header.navbar
 		background-image: url("../images/background_Request.png")
 		padding-left: 0px
 		background-position: left center
+.shft-lr
+	@media (min-width: $screen-md) 
+		margin-left: 30px
+.shft-lt
+	@media (min-width: $screen-md) 
+		margin-right: 30px
 
 /*****************************************************************/
 

@@ -8220,9 +8220,9 @@ h1, h2 {
 }
 
 /*************************************************************** */
-/*********************** Button Styles ************************ */
-/* line 69, ../stylesheets/style.sass */
-.btn1, input[type="submit"] {
+/*********************** Button/Links Styles ************************ */
+/* line 72, ../stylesheets/style.sass */
+.btn1, .btn1:hover,input[type="submit"] {
   background-color: yellow;
   color: darkblue;
   background-image: -webkit-linear-gradient(top, #ffffe5 0%, #ffff66 10%, yellow 25%, #e5e500 80%, #cccc00 100%);
@@ -8233,14 +8233,19 @@ h1, h2 {
   display: inline-block;
   font-weight: 600;
   margin: 20px 0px;
+  text-decoration: none;
+}
+/* line 84, ../stylesheets/style.sass */
+.btn1:hover, input[type="submit"]:hover {
+  background-image: -webkit-linear-gradient(top, yellow 0%, #e5e500 10%, #cccc00 100%);
 }
 
-/* line 81, ../stylesheets/style.sass */
+/* line 86, ../stylesheets/style.sass */
 input[type="submit"] {
   line-height: 3px;
 }
 
-/* line 85, ../stylesheets/style.sass */
+/* line 90, ../stylesheets/style.sass */
 #row2 .btn1 {
   width: 116px;
   width: 116px;
@@ -8249,18 +8254,18 @@ input[type="submit"] {
 
 /********************************************************** */
 /*************** Standard Form Styles ********************* */
-/* line 93, ../stylesheets/style.sass */
+/* line 98, ../stylesheets/style.sass */
 label {
   color: #092f57;
 }
 
-/* line 96, ../stylesheets/style.sass */
+/* line 101, ../stylesheets/style.sass */
 .contact-us-form textarea, .contact-us-form input:not([type="submit"]) {
   opacity: 0.4;
   background-color: #092f57;
   color: white;
 }
-/* line 100, ../stylesheets/style.sass */
+/* line 105, ../stylesheets/style.sass */
 .contact-us-form .input-border {
   border: 1.5px solid #092f57;
   border-radius: 4px;
@@ -8268,45 +8273,45 @@ label {
 
 /********************************************************* */
 /********************* Header Styles ********************* */
-/* line 107, ../stylesheets/style.sass */
+/* line 112, ../stylesheets/style.sass */
 header.navbar {
   min-height: 40px !important;
 }
 
-/* line 109, ../stylesheets/style.sass */
+/* line 114, ../stylesheets/style.sass */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 113, ../stylesheets/style.sass */
+/* line 118, ../stylesheets/style.sass */
 .nav {
   padding-right: 15px;
 }
-/* line 115, ../stylesheets/style.sass */
+/* line 120, ../stylesheets/style.sass */
 .nav input {
   height: 34px !important;
 }
-/* line 118, ../stylesheets/style.sass */
+/* line 123, ../stylesheets/style.sass */
 .nav > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 
-/* line 122, ../stylesheets/style.sass */
+/* line 127, ../stylesheets/style.sass */
 .navbar-brand {
   padding: 0px 15px;
 }
 
-/* line 125, ../stylesheets/style.sass */
+/* line 130, ../stylesheets/style.sass */
 .right-inner-addon {
   position: relative;
 }
-/* line 127, ../stylesheets/style.sass */
+/* line 132, ../stylesheets/style.sass */
 .right-inner-addon input {
   padding-right: 30px;
 }
-/* line 129, ../stylesheets/style.sass */
+/* line 134, ../stylesheets/style.sass */
 .right-inner-addon i {
   position: absolute;
   right: 0;
@@ -8314,35 +8319,35 @@ header.navbar {
   pointer-events: none;
 }
 
-/* line 134, ../stylesheets/style.sass */
+/* line 139, ../stylesheets/style.sass */
 .fb-like {
   display: inline-block;
   position: relative;
   padding-top: 14.5px;
 }
 
-/* line 138, ../stylesheets/style.sass */
+/* line 143, ../stylesheets/style.sass */
 .navbar-nav > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-/* line 143, ../stylesheets/style.sass */
+/* line 148, ../stylesheets/style.sass */
 .navbar-form input {
   color: #31708f;
   background-color: #d9edf7;
 }
-/* line 146, ../stylesheets/style.sass */
+/* line 151, ../stylesheets/style.sass */
 .navbar-form i {
   color: #31708f;
 }
 
-/* line 148, ../stylesheets/style.sass */
+/* line 153, ../stylesheets/style.sass */
 .navbar-nav > li {
   margin: 10px;
 }
 
-/* line 150, ../stylesheets/style.sass */
+/* line 155, ../stylesheets/style.sass */
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: #d9edf7 !important;
   color: #31708f !important;
@@ -8352,58 +8357,75 @@ header.navbar {
 
 /*************************************************************** */
 /************* Signup & Request Section Styles ***************** */
-/* line 160, ../stylesheets/style.sass */
+/* line 167, ../stylesheets/style.sass */
 #row1-section {
   background: url("../images/row1-bgi.jpg") no-repeat fixed center center;
   background-size: cover;
   margin-top: 50px;
 }
 
-/* line 169, ../stylesheets/style.sass */
+/* line 176, ../stylesheets/style.sass */
 #row1 img {
   position: absolute;
   left: 50%;
   margin-left: -100px;
   z-index: 100;
 }
-/* line 174, ../stylesheets/style.sass */
+/* line 181, ../stylesheets/style.sass */
 #row1 .row1-img {
   background-position: center center;
   background-repeat: no-repeat;
   height: 554px;
 }
 @media (min-width: 0px) and (max-width: 992px) {
-  /* line 174, ../stylesheets/style.sass */
+  /* line 181, ../stylesheets/style.sass */
   #row1 .row1-img {
     background-position: center center !important;
   }
 }
-/* line 180, ../stylesheets/style.sass */
+/* line 187, ../stylesheets/style.sass */
 #row1 .row1-img div {
-  position: relative;
+  position: absolute;
   top: 415px;
+  left: 0px;
+  right: 0px;
 }
-/* line 183, ../stylesheets/style.sass */
+/* line 192, ../stylesheets/style.sass */
 #row1 .row1-img div .btn1 {
   margin: 0 auto;
   display: block;
+  width: 184px;
 }
-/* line 186, ../stylesheets/style.sass */
+/* line 196, ../stylesheets/style.sass */
 #row1 > div:nth-of-type(2) {
   background-image: url("../images/background_Signup.png");
   background-position: right center;
   padding-right: 0px;
 }
-/* line 190, ../stylesheets/style.sass */
+/* line 200, ../stylesheets/style.sass */
 #row1 > div:nth-of-type(3) {
   background-image: url("../images/background_Request.png");
   padding-left: 0px;
   background-position: left center;
 }
 
+@media (min-width: 992px) {
+  /* line 204, ../stylesheets/style.sass */
+  .shft-lr {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 207, ../stylesheets/style.sass */
+  .shft-lt {
+    margin-right: 30px;
+  }
+}
+
 /*************************************************************** */
 /**************** Our Vision Section Styles ******************** */
-/* line 198, ../stylesheets/style.sass */
+/* line 214, ../stylesheets/style.sass */
 iframe {
   width: 100%;
   height: 27vw;
@@ -8411,55 +8433,55 @@ iframe {
 
 /*************************************************************** */
 /**************** Contact-Us Section Styles ******************** */
-/* line 205, ../stylesheets/style.sass */
+/* line 221, ../stylesheets/style.sass */
 #contact-us {
   background-color: #5db8d6;
 }
 
-/* line 207, ../stylesheets/style.sass */
+/* line 223, ../stylesheets/style.sass */
 .label-input {
   margin-bottom: 20px;
 }
 
-/* line 210, ../stylesheets/style.sass */
+/* line 226, ../stylesheets/style.sass */
 input, textarea {
   padding: 12px !important;
 }
 
-/* line 213, ../stylesheets/style.sass */
+/* line 229, ../stylesheets/style.sass */
 #row3 input {
   height: 45px;
 }
 
-/* line 215, ../stylesheets/style.sass */
+/* line 231, ../stylesheets/style.sass */
 label {
   font-size: 12px;
 }
 
-/* line 218, ../stylesheets/style.sass */
+/* line 234, ../stylesheets/style.sass */
 textarea {
   min-height: 100px;
   resize: vertical;
 }
 
 /*****************  Social Links Section Styles ***************** */
-/* line 223, ../stylesheets/style.sass */
+/* line 239, ../stylesheets/style.sass */
 #social-links {
   background-color: #00a2c9;
 }
 
-/* line 225, ../stylesheets/style.sass */
+/* line 241, ../stylesheets/style.sass */
 .social {
   padding: 34px;
   text-align: center;
   margin: 0px;
 }
-/* line 229, ../stylesheets/style.sass */
+/* line 245, ../stylesheets/style.sass */
 .social div {
   display: inline-block;
   text-align: center;
 }
-/* line 232, ../stylesheets/style.sass */
+/* line 248, ../stylesheets/style.sass */
 .social a {
   display: block;
   overflow: hidden;
@@ -8470,7 +8492,7 @@ textarea {
   border-radius: 45px;
   background-size: 215px;
 }
-/* line 241, ../stylesheets/style.sass */
+/* line 257, ../stylesheets/style.sass */
 .social li {
   display: inline-block;
   margin-left: 0.17em;
@@ -8480,84 +8502,84 @@ textarea {
   cursor: pointer;
   padding: 0.125em;
 }
-/* line 250, ../stylesheets/style.sass */
+/* line 266, ../stylesheets/style.sass */
 .social #facebook:hover {
   background-color: #0068ad;
 }
-/* line 252, ../stylesheets/style.sass */
+/* line 268, ../stylesheets/style.sass */
 .social #pinterest:hover {
   background-color: #cb2026;
 }
-/* line 254, ../stylesheets/style.sass */
+/* line 270, ../stylesheets/style.sass */
 .social #linkedin:hover {
   background-color: #007bb6;
 }
-/* line 256, ../stylesheets/style.sass */
+/* line 272, ../stylesheets/style.sass */
 .social #youtube:hover {
   background-color: #db2625;
 }
-/* line 258, ../stylesheets/style.sass */
+/* line 274, ../stylesheets/style.sass */
 .social #instagram:hover {
   background-color: #324991;
 }
-/* line 260, ../stylesheets/style.sass */
+/* line 276, ../stylesheets/style.sass */
 .social #twitter:hover {
   background-color: #007bb6;
 }
-/* line 262, ../stylesheets/style.sass */
+/* line 278, ../stylesheets/style.sass */
 .social #googleplus:hover {
   background-color: #d6492f;
 }
 
-/* line 265, ../stylesheets/style.sass */
+/* line 281, ../stylesheets/style.sass */
 #facebook {
   background-position: -31px -135px;
 }
 
-/* line 267, ../stylesheets/style.sass */
+/* line 283, ../stylesheets/style.sass */
 #pinterest {
   background-position: -31px -105px;
 }
 
-/* line 269, ../stylesheets/style.sass */
+/* line 285, ../stylesheets/style.sass */
 #youtube {
   background-position: -149px -43px;
 }
 
-/* line 271, ../stylesheets/style.sass */
+/* line 287, ../stylesheets/style.sass */
 #instagram {
   background-position: -72px -104px;
 }
 
-/* line 273, ../stylesheets/style.sass */
+/* line 289, ../stylesheets/style.sass */
 #googleplus {
   background-position: -70px -13px;
 }
 
-/* line 275, ../stylesheets/style.sass */
+/* line 291, ../stylesheets/style.sass */
 #twitter {
   background-position: -30px -165px;
 }
 
-/* line 277, ../stylesheets/style.sass */
+/* line 293, ../stylesheets/style.sass */
 #linkedin {
   background-position: -110px -45px;
 }
 
 /************************************************************ */
 /******************* Footer Styles ************************** */
-/* line 283, ../stylesheets/style.sass */
+/* line 299, ../stylesheets/style.sass */
 #footer {
   background-color: #0a3153;
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 286, ../stylesheets/style.sass */
+/* line 302, ../stylesheets/style.sass */
 .footer-inner {
   padding: 68px 34px;
 }
 
-/* line 288, ../stylesheets/style.sass */
+/* line 304, ../stylesheets/style.sass */
 #siteInfo {
   margin-bottom: 1.5em;
   text-align: center;
@@ -8570,7 +8592,7 @@ textarea {
   font-style: normal;
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 299, ../stylesheets/style.sass */
+/* line 315, ../stylesheets/style.sass */
 #siteInfo a, #siteInfo a:active, #siteInfo a:hover, #siteInfo a:visited {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
