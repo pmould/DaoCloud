@@ -1,7 +1,7 @@
 DaoCloud 
 ========
-Holistic Health Care Online Center
-=======
+-About
+	Holistic Health Care Online Center
 
 -Description
 	Redesign of the DaoCloud Landing Page and linked page
