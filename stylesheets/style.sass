@@ -1,0 +1,307 @@
+/***************** DaoCloud Landing Page Stylesheet ****************/
+
+// SASS IMPORTS: Twitter Bootstrap - ALL SASS Files
+//***************** Twitter Bootstrap 3.2  *************************/
+@import "vendor/bootstrap"
+
+/*******************************************************************/
+
+// VARIABLES
+
+//Font-Colors
+$titeClr: #092f57
+//Call-to-action Button variables
+$btnCol: darkblue
+$btnBgc: yellow
+
+/*********************** CustomHelper Classes **********************/
+.center-block 
+	float: none
+.block
+	display: block !important
+
+/******************************************************************/
+
+/***************** UNCOMMENT TO SEE GRID LAYOUT *******************/
+/*
+	.container
+		border: 5px solid orange
+
+	.row
+		border: 1px solid black
+		> .col
+			border: 5px solid red 
+	 	
+/*******************************************************************/
+
+/********************** Base CSS styles ****************************/
+body
+	font-family: Raleway
+h1
+	font-size: 36px !important
+	font-weight: 600 !important
+
+h2
+	font-size: 26px !important
+
+h1, h2
+	margin: 0px
+	text-align: center
+	color: $titeClr
+#main-content
+	margin-top: 51px
+
+/*****************************************************************/
+
+/******************* Section CSS Styles **************************/
+.section-title
+	padding: 45px
+
+.section
+	&:after 
+		content: " "
+		padding-bottom: 40px
+		display: table
+
+/*****************************************************************/
+
+/************************ Button Styles *************************/	
+.btn1, input[type="submit"]
+	background-color: $btnBgc
+	color: $btnCol
+	background-image: -webkit-linear-gradient(top,#ffffe5 0%, #ffff66 10%, yellow 25%, #e5e500 80%, #cccc00 100%)
+	font-size: 18px
+	padding: 20px
+	border-radius: 10px
+	margin: 0px 5px
+	display: inline-block
+	font-weight: 600
+	margin: 20px 0px
+
+input[type="submit"]
+	line-height: 3px
+
+#row2
+	.btn1
+		width: 116px
+		width: 116px
+		margin: 2vw
+
+/************************************************************/
+
+/**************** Standard Form Styles **********************/
+label
+	color: $titeClr
+.contact-us-form 
+	textarea, input:not([type="submit"])
+		opacity: 0.4
+		background-color: $titeClr
+		color: #fff
+	.input-border
+		border: 1.5px solid #092f57
+		border-radius: 4px
+
+/***********************************************************/
+
+/********************** Header Styles **********************/
+header.navbar 
+	min-height: 40px!important
+.navbar 
+	margin-bottom: 0
+
+
+.nav
+	padding-right: 15px
+	input
+		height:  34px !important
+	>li
+		>a
+			position: relative
+			display: block
+			padding: 10px 15px
+.navbar-brand
+	padding: 0px 15px
+
+.right-inner-addon
+	position: relative
+	input
+		padding-right: 30px
+	i 
+		position: absolute
+		right: 0
+		padding: 10px 12px
+		pointer-events: none
+.fb-like 
+	display: inline-block
+	position: relative
+	padding-top: 14.5px
+.navbar-nav>li>a 
+	padding-top: 15px
+	padding-bottom: 15px
+
+.navbar-form
+	input
+		color: $state-info-text	
+		background-color: $state-info-bg	
+	i 
+		color: $state-info-text	
+.navbar-nav > li 
+	margin: 10px
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus 
+	background-color: $state-info-bg !important
+	color: $state-info-text	 !important
+	padding: 5px 15px
+	border-radius: 4px
+
+/*****************************************************************/
+
+
+/************** Signup & Request Section Styles ******************/	
+#row1-section
+	background: url("../images/row1-bgi.jpg") no-repeat fixed center center
+	background-size: cover
+	margin-top: 50px
+
+
+
+
+#row1
+	img
+		position: absolute
+		left: 50%
+		margin-left: -100px
+		z-index: 100
+	.row1-img
+		background-position: center center
+		background-repeat: no-repeat
+		height: 554px
+		@media (min-width: 0px) and (max-width: $screen-md)
+			background-position: center center !important
+		div
+			position: relative
+			top: 415px
+			.btn1
+				margin: 0 auto
+				display: block
+	>div:nth-of-type(2)
+		background-image: url("../images/background_Signup.png")
+		background-position: right center
+		padding-right: 0px
+	>div:nth-of-type(3)
+		background-image: url("../images/background_Request.png")
+		padding-left: 0px
+		background-position: left center
+
+/*****************************************************************/
+
+/***************** Our Vision Section Styles *********************/
+iframe
+	width: 100%
+	height: 27vw
+
+/*****************************************************************/
+
+/***************** Contact-Us Section Styles *********************/		
+#contact-us	
+	background-color: #5db8d6
+.label-input
+	margin-bottom: 20px 
+
+input, textarea
+	padding: 12px !important
+#row3
+	input
+		height: 45px
+label
+	font-size: 12px
+
+textarea
+	min-height: 100px
+	resize: vertical
+
+/******************  Social Links Section Styles ******************/	
+#social-links
+	background-color: #00a2c9		
+.social
+	padding: 34px
+	text-align: center
+	margin: 0px
+	div
+		display: inline-block
+		text-align: center
+	a 
+		display: block
+		overflow: hidden
+		width: 36px
+		height: 36px
+		background: url(../images/social-icons-sprite3.png) no-repeat
+		text-indent: -9999px
+		border-radius: 45px
+		background-size: 215px
+	li
+		display: inline-block
+		margin-left: .17em
+		padding: 5px
+		border-radius: 50%
+		background: transparent
+		cursor: pointer
+		padding: .125em
+
+	#facebook:hover
+		background-color: #0068ad
+	#pinterest:hover
+		background-color: #cb2026 
+	#linkedin:hover
+		background-color: #007bb6
+	#youtube:hover
+		background-color: #db2625	
+	#instagram:hover
+		background-color: #324991
+	#twitter:hover
+		background-color: #007bb6
+	#googleplus:hover
+		background-color: #d6492f
+
+#facebook
+	background-position: -31px -135px
+#pinterest
+	background-position: -31px -105px
+#youtube
+	background-position: -149px -43px
+#instagram
+	background-position: -72px -104px
+#googleplus
+	background-position: -70px -13px
+#twitter
+	background-position: -30px -165px
+#linkedin
+	background-position: -110px -45px
+
+/**************************************************************/
+
+/******************** Footer Styles ***************************/
+#footer
+	background-color: #0a3153
+	color: rgba(255,255,255,.3)
+.footer-inner 
+	padding: 68px 34px
+#siteInfo 
+	margin-bottom: 1.5em
+	text-align: center
+	font-family: "Raleway"
+	text-transform: uppercase
+	text-decoration: none
+	letter-spacing: 1px
+	font-size: 12px
+	font-weight: 500
+	font-style: normal
+	color: rgba(255,255,255,.8)
+	a,a:active, a:hover, a:visited
+		color: rgba(255,255,255,.8)
+		text-decoration: none
+
+/**************************************************************/
+
+
+//END OF SASS STYLESHEET
+
