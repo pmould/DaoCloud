@@ -1,0 +1,395 @@
+<html ng-app="pro-demo-page">
+	<head>
+		<title>Join DaoCloud Pro</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="DaoCloud">
+		<meta name="keywords" content="">    
+		<link rel="shortcut icon" href="">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.5/css/bootstrap-modal.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+	
+		<style>
+
+			/* Smartphones (portrait and landscape) ----------- */
+			@media only screen and (max-width : 768px) {
+			/* Styles */
+						/* Small devices (tablets, 768px and up) */
+				#pro-demo-page h2
+				{
+					font-size: 18px;
+				}
+				#pro-demo-page select
+				{
+					width: 100%;
+				}
+
+				#pro-demo-page .thumb-txt
+				{
+					top:-21px;
+				}
+				#pro-demo-page .thumb-txt2
+				{
+					top:-11px;
+				}
+				#pro-demo-page .thumb-txt h2
+				{
+					font-size: 12px;
+				}
+
+		}
+			@media (min-width: 768px) {
+
+				#pro-demo-page h2
+				{
+					font-size: 24px;
+				}
+
+			}
+			@media (min-width:580px) and (max-width: 768px) {
+
+				#pro-demo-page .thumb-txt
+				{
+					top: -100px;
+				}
+
+			}
+
+			/* Medium devices (desktops, 992px and up) */
+			@media (min-width: 992px) {
+
+				#pro-demo-page h2
+				{
+					font-size: 28px;
+				}
+
+			 }
+
+			/* Large devices (large desktops, 1200px and up) */
+			@media (min-width: 1224px) {
+
+				#pro-demo-page h2
+				{
+					font-size: 30px;
+				}
+
+			}
+	
+			/* Large screens ----------- */
+			@media only screen  and (min-width : 1824px) {
+			/* Styles */
+
+			}
+
+			#pro-demo-page h2, #pro-demo-page h1
+			{
+				color: #00a2c9;
+				font-family: "Raleway";
+				font-weight: bold;
+			}
+
+			#content-wrapper
+			{
+				box-sizing: border-box;
+				max-width: 1080px;
+				padding: 0px 34px;
+				margin: auto;
+
+			}
+
+			.page-title
+			{
+				padding-bottom: 150px !important;
+			}
+
+			.pro-topic h2, .pro-topic .thumb-img
+			{
+				margin-top: 0px;
+				margin-bottom: 0px;
+				position: relative;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				
+
+			}
+			.pro-topic .modal img
+			{
+				-webkit-transform:none ;
+				-ms-transform:none ;
+				-o-transform: none;
+				transform: none;
+			}
+
+			#pro-demo-page .pro-topic aside
+			{
+				height: 200px;
+			}
+
+			.center-block
+			{	
+				margin: 0 auto;
+				position: relative;
+				display: block;
+			}
+
+			#pro-demo-page .row
+			{
+				padding: 50px 0px;
+			}
+			.modal{
+
+					height: 100% !important;
+			}
+
+			.modal.fade.in
+			{
+				top:0%;
+				padding: 20px !important;
+			}
+			.modal-dialog
+			{
+				height: 100%;
+			}
+			.thumb-txt
+			{
+				top: -88px;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				text-align: center;
+				position: absolute;
+				left: 25%;
+				right: 25%;
+			}
+			.thumb-txt3
+			{
+				top:-58px;
+			}
+
+			.select-state-row
+			{
+				bottom: 100px;
+				position: relative;
+			}
+			.col-xs-6:hover > .thumbnail,.col-sm-6:hover > .thumbnail,.col-lg-6:hover > .thumbnail,.col-md-6:hover>.thumbnail,.thumbnail:hover
+			{
+				border: 1px solid #00a2c9;
+			}
+			select
+			{
+				font-size: 22PX;
+				padding-left: 108px;
+			}
+		</style>
+		<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$('.thumb-txt').hover(
+
+				function(){
+					console.log("x");
+					$(this).prev().css('border', '1px solid #00a2c9');
+				}, 
+				function(){
+					$(this).prev().css('border','');
+				}
+			);
+
+		});
+		
+
+		</script>
+	</head>
+	<body>
+
+		<div id="content-wrapper">
+
+
+
+
+			<section id="pro-demo-page">
+				<div class="row page-title">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h1 class="text-center">Join DaoCload Trusted Network</h1>
+					</div>
+				</div>
+				<div class="row pro-topic">
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img src="images/placeholder.jpg" class="img-rounded img-responsive center-block thumb-img thumbnail"  data-toggle="modal" data-target="#myModal1">
+						<div class="thumb-txt center-block" data-toggle="modal" data-target="#myModal1">
+	                          <h2> Pro - About</h2>
+	  					</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						      <img src="images/placeholder.png" class="img-rounded img-responsive center-block">
+						</div>
+					</div>
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h2 class="text-center">Build Your Wellness Profile</h2>
+					</div>
+				</div>
+				<div class="row pro-topic">
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h2 class="text-center">Share Trusted Resources 
+						<br>&<br>
+						Distinguish Your Practice</h2>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img src="images/placeholder.jpg" class="img-rounded img-responsive center-block thumb-img thumbnail"  data-toggle="modal" data-target="#myModal2">
+						<div class="thumb-txt thumb-txt2 thumb-txt3 center-block" data-toggle="modal" data-target="#myModal2">
+	                          <h2>Professional Resources</h2>
+	  						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						      <img src="images/placeholder.png" class="img-rounded img-responsive center-block">
+						    
+						</div>						
+					</div>
+				</div>
+							<div class="row pro-topic">
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img src="images/placeholder.jpg" class="img-rounded img-responsive center-block thumb-img thumbnail"  data-toggle="modal" data-target="#myModal3">
+						<div toggle="modal" data-target="#myModal3" class="thumb-txt thumb-txt2 center-block">
+	                          <h2>Pro - Network</h2>
+	  						</div>
+												<!-- Modal -->
+						<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						      <img src="images/placeholder.png" class="img-rounded img-responsive center-block">
+						    
+						</div>
+					</div>
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h2 class="text-center">Connect with Clients and Colleagues</h2>
+					</div>
+				</div>
+				<div class="row pro-topic">
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h2 class="text-center">Put Yourself on the Map</h2>
+					</div>
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img src="images/placeholder.jpg" class="img-rounded img-responsive center-block thumb-img thumbnail"  data-toggle="modal" data-target="#myModal4">
+						<div class="thumb-txt thumb-txt2 thumb-txt3 center-block" toggle="modal" data-target="#myModal4">
+	                          <h2> Find Professionals</h2>
+	  						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						      <img src="images/placeholder.png" class="img-rounded img-responsive center-block">
+						    
+						</div>
+					</div>
+				</div>
+				<div class="row pro-topic">
+					<div class="aside col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					
+						<img src="images/placeholder.jpg" class="img-rounded img-responsive center-block thumb-img thumbnail"  data-toggle="modal" data-target="#myModal5">
+						<div class="thumb-txt thumb-txt2 center-block"data-toggle="modal" data-target="#myModal5">
+	                          <h2> Member Network</h2>
+	  						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						      <img src="images/placeholder.png" class="img-rounded img-responsive center-block">
+						    
+						</div>
+
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h2 class="text-center">Build Trust
+							<br>&<br>
+							Amplify Word of Mouth
+						</h2>
+					</div>
+					</div>
+					<div ng-controller="state-controller" class="row select-state-row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<select class="center-block" ng-model="myState" ng-options="state.name for state in states">
+							
+						</select>
+					</div>
+				</div>		
+			</section>
+		</div>
+	</body>
+	<script>
+		angular.module('pro-demo-page', [])
+  .controller('state-controller', ['$scope', function($scope) {
+		$scope.states = [
+			{ name: 'See Availability in Your State', abbreviation: 'description'},
+		    { name: 'ALABAMA', abbreviation: 'AL'},
+		    { name: 'ALASKA', abbreviation: 'AK'},
+		    { name: 'AMERICAN SAMOA', abbreviation: 'AS'},
+		    { name: 'ARIZONA', abbreviation: 'AZ'},
+		    { name: 'ARKANSAS', abbreviation: 'AR'},
+		    { name: 'CALIFORNIA', abbreviation: 'CA'},
+		    { name: 'COLORADO', abbreviation: 'CO'},
+		    { name: 'CONNECTICUT', abbreviation: 'CT'},
+		    { name: 'DELAWARE', abbreviation: 'DE'},
+		    { name: 'DISTRICT OF COLUMBIA', abbreviation: 'DC'},
+		    { name: 'FEDERATED STATES OF MICRONESIA', abbreviation: 'FM'},
+		    { name: 'FLORIDA', abbreviation: 'FL'},
+		    { name: 'GEORGIA', abbreviation: 'GA'},
+		    { name: 'GUAM', abbreviation: 'GU'},
+		    { name: 'HAWAII', abbreviation: 'HI'},
+		    { name: 'IDAHO', abbreviation: 'ID'},
+		    { name: 'ILLINOIS', abbreviation: 'IL'},
+		    { name: 'INDIANA', abbreviation: 'IN'},
+		    { name: 'IOWA', abbreviation: 'IA'},
+		    { name: 'KANSAS', abbreviation: 'KS'},
+		    { name: 'KENTUCKY', abbreviation: 'KY'},
+		    { name: 'LOUISIANA', abbreviation: 'LA'},
+		    { name: 'MAINE', abbreviation: 'ME'},
+		    { name: 'MARSHALL ISLANDS', abbreviation: 'MH'},
+		    { name: 'MARYLAND', abbreviation: 'MD'},
+		    { name: 'MASSACHUSETTS', abbreviation: 'MA'},
+		    { name: 'MICHIGAN', abbreviation: 'MI'},
+		    { name: 'MINNESOTA', abbreviation: 'MN'},
+		    { name: 'MISSISSIPPI', abbreviation: 'MS'},
+		    { name: 'MISSOURI', abbreviation: 'MO'},
+		    { name: 'MONTANA', abbreviation: 'MT'},
+		    { name: 'NEBRASKA', abbreviation: 'NE'},
+		    { name: 'NEVADA', abbreviation: 'NV'},
+		    { name: 'NEW HAMPSHIRE', abbreviation: 'NH'},
+		    { name: 'NEW JERSEY', abbreviation: 'NJ'},
+		    { name: 'NEW MEXICO', abbreviation: 'NM'},
+		    { name: 'NEW YORK', abbreviation: 'NY'},
+		    { name: 'NORTH CAROLINA', abbreviation: 'NC'},
+		    { name: 'NORTH DAKOTA', abbreviation: 'ND'},
+		    { name: 'NORTHERN MARIANA ISLANDS', abbreviation: 'MP'},
+		    { name: 'OHIO', abbreviation: 'OH'},
+		    { name: 'OKLAHOMA', abbreviation: 'OK'},
+		    { name: 'OREGON', abbreviation: 'OR'},
+		    { name: 'PALAU', abbreviation: 'PW'},
+		    { name: 'PENNSYLVANIA', abbreviation: 'PA'},
+		    { name: 'PUERTO RICO', abbreviation: 'PR'},
+		    { name: 'RHODE ISLAND', abbreviation: 'RI'},
+		    { name: 'SOUTH CAROLINA', abbreviation: 'SC'},
+		    { name: 'SOUTH DAKOTA', abbreviation: 'SD'},
+		    { name: 'TENNESSEE', abbreviation: 'TN'},
+		    { name: 'TEXAS', abbreviation: 'TX'},
+		    { name: 'UTAH', abbreviation: 'UT'},
+		    { name: 'VERMONT', abbreviation: 'VT'},
+		    { name: 'VIRGIN ISLANDS', abbreviation: 'VI'},
+		    { name: 'VIRGINIA', abbreviation: 'VA'},
+		    { name: 'WASHINGTON', abbreviation: 'WA'},
+		    { name: 'WEST VIRGINIA', abbreviation: 'WV'},
+		    { name: 'WISCONSIN', abbreviation: 'WI'},
+		    { name: 'WYOMING', abbreviation: 'WY' }
+		];
+		$scope.myState = $scope.states[0];
+		}]);
+	</script>
+<html>
