@@ -27,6 +27,7 @@
         
         <!-- CSS Imports -->
         <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet" href="css/bootstap/bootstrap.css">-->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -50,168 +51,215 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a data-ng-click="goHome()" href="/" class="navbar-brand">
-                    <img width="155" data-ng-src="https://cdnprod.daocloud.com/0.2.5-1416940713453/modules/core/img/brand/dao_logo.png" alt="dao logo" src="https://cdnprod.daocloud.com/0.2.5-1416940713453/modules/core/img/brand/dao_logo.png">
+                    <img width="155" data-ng-src="images/dao_logo.png" alt="dao logo" src="images/dao_logo.png">
                 </a>
             </div>
             <nav id="daocload-nav" class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation" style="height: 0px;">
-                <a href="/dao-search" class="btn btn-info navbar-btn navbar-left">Find Professionals</a>
-                <form data-ng-submit="doSearch()" class="navbar-form navbar-left ng-pristine ng-valid" role="search">
-                  <div class="right-inner-addon">
-                      <i class="glyphicon glyphicon-search"></i>
-                      <input type="search" class="form-control ng-pristine ng-valid ng-valid-minlength" data-ng-model="searchQuery" data-ng-minlength="2/">
-                  </div>
-                </form>
-                <!--
-                <span class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/daocloud" data-width="142" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=666198436781043&amp;href=https%3A%2F%2Fwww.facebook.com%2Fdaocloud&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=142"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f24242e9cc" width="142px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.1/plugins/like.php?action=like&amp;app_id=666198436781043&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df298a5f764%26domain%3Dbeta.daocloud.com%26origin%3Dhttps%253A%252F%252Fbeta.daocloud.com%252Ff3960df5b4%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fwww.facebook.com%2Fdaocloud&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=142" style="border: none; visibility: visible; width: 81px; height: 20px;" class=""></iframe></span></span>
-               -->
+
                 <ul class="nav navbar-nav navbar-right" data-ng-hide="authentication.user">
-                    <li ui-route="/signup" ng-class="{active: $uiRoute}" class="ng-scope">
+                       <li><a href="">Professionals</a></li>
+
+                       <li><a href="">Regional &amp; Pricing</a></li>
+                       <li><a href="">About</a></li>
+                    
+ <!--                   <li ui-route="/signup" ng-class="{active: $uiRoute}" class="ng-scope"
                         <a href="/signup">Signup</a>
-                    </li>
-                    <li class="divider-vertical"></li>
+                    </li>-->
+                    <!--<li class="divider-vertical"></li>-->
                     <li ui-route="/signin" ng-class="{active: $uiRoute}" class="ng-scope active">
                         <a href="/signin">Signin</a>
                     </li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <section id="row1-section" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">    
-
-            		<section id="row1" class="row">
-                        <div class="section-title">
-                			<h1>Wellness Network</h1>
-                			<h2>Empowering Self-Care through Community</h2>
-                        </div>
-                        <img src="images/daocloud-logo.png" class="text-center hidden-xs hidden-sm">
-            		  	<div class="row1-img col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="shft-lr" >
-                                <a role="button" href="member-demo-page.html" class="btn1">Yes! Sign me up</a>
+        </header> 
+        <section id="row1-section" class="section">
+            <div class="container">
+                <div class="row">
+                    <div id="signup-row"class="col-lg-12 col-md-12 col-sm-12 col-xs">
+                        <div class="row">
+                           <div class="col-lg-11 col-md-11 col-sm-11 col-xs center-block inner-container"> 
+                                <h2> Connect to the social <br class="visible-xs"> wellness network</h2>
+                                <buttons class="btn">
+                                            Sign Up
+                                </buttons> 
+                                <div class="scrolldown-txt">
+                                    <span class="glyphicon glyphicon-chevron-down"></span>
+                                    Scroll To Learn About DaoCloud
+                                    <span class="glyphicon glyphicon-chevron-down"></span>
+                                </div> 
                             </div>
-            			</div>
-                        <div class="row1-img col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="shft-lt">
-                                <a role="button" href="pro-demo-page.html" class="btn1">Request a Demo</a>
-                            </div>
-                        </div>
-            		</section>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="row2-section" class="section">
-        <div class="container">
-    		<div  class="row">
-                <div class="section-title">
-    			 <h1>Our Vision</h1>
-                </div>
-                <div id="youtube-wrapper" class="col-xs-10 col-sm-10 col-md-6 col-lg-6 center-block ">
-                    <iframe class="center-block" width="663" height="391" src="http://www.youtube.com/embed/ESSMHRu7IUM" frameborder="0" allowfullscreen></iframe> 
-                </div>
-            </div>
-            <div id="row2" class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-block text-center">
-                        <buttons class="btn1">
-                            Partners
-                        </buttons>
-                        <buttons class="btn1">
-                            Team
-                        </buttons>
-                        <buttons class="btn1">
-                            Story
-                        </buttons>
+                       </div>  
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-    </section>
-    <section id="contact-us" class="section">
-                    <div class="section-title">
-                        <h1>Contact Us</h1>
-                        <h2>We want to make your life better.<br> Be in touch!</h2>
-                    </div>
+        </section>
+        <section id="row2-section" class="section">
         <div class="container">
-            <div id="row3" class="row">
-                <div class="contact-us-form col-xs-12 col-sm-12 col-md-8 col-lg-8 center-block">
-                    <form action="" method="POST" role="form">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-block">
-                                    <label for="name">Your Name</label>       
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 label-input">
-                                    <div class="input-border">
-                                    <input type="text" name="fname" class="form-control">
-                                    </div>
-                                    <label for="fname">First Name</label>
-
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 label-input">
-                                    <div class="input-border">
-                                        <input type="text" name="fname" class="form-control">
-                                    </div>
-                                    <label for="lname">Last Name</label>
-                                </div>              
-                            </div>
+                <div class="row">
+                    <div id="userprof-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
+                        <div class="row">
+                            <div class="div col-lg-11 col-md-11 col-sm-11 col-xs-11 center-block inner-container">
+                                <span class="title-container">
+                                    <span class="sec-num-container"><span class="sec-num">1</span></span>
+                                    <h3 class="sec-title">Build your<br> wellness profile</h3>
+                                </span>
                                 
-                                <div class= "label-input">
-                                    <label for="email">Email Address</label>
-                                    <div class="input-border">
-                                        <input type="text" name="email" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="label-input">
-                                    <label for="msg">Message</label>
-                                    <div class="input-border">
-                                        <textarea name="msg" id="msg" class="form-control">
-                                        </textarea>
-                                    </div>
-                                </div>
-                                <input class="block" type="submit" value="Submit" name="submit">
-                        </div>             
-                    </form>
-                </div>
-    		</div>
-        </div>
-    </section>
 
-    <section id="social-links">
-        <div class="container">
-            <div id="row4" class="social row ">
-                    <div class="center-block">
-                        <li><a href="https://www.facebook.com/daocloud" id="facebook" target="_blank"></a></li>
-                        <li><a id="youtube" href="http://www.youtube.com/channel/UC4WFHIc6JTKaFRSgCAbFtSg" target="_blank"></a></li>
-                        <li><a id="pinterest" href="https://www.pinterest.com/DaoCloud/" target="_blank"></a></li>
-                        <li><a id="instagram" href="" target="_blank"></a></li>
-                        <li><a id="twitter" href="https://twitter.com/TeamDaoCloud" target="_blank"></a></li>
-                        <li><a id="googleplus" href="https://plus.google.com/u/0/112987426836114919868/about" target="_blank"></a></li>
-                        <li><a id="linkedin" href="https://plus.google.com/u/0/112987426836114919868/about" target="_blank"></a></li>
-                    </div>
-            </div><!-- end of row -->
-        </div><!-- end of  container -->
-    </section><!-- end of social-links section -->
-    <footer id="footer" role="contentinfo">
-          <div class="footer-inner" id="">
-            <div id="siteInfo"><a href="mailto:contact@daocloud.com" class="site-email">contact@daocloud.com</a></div>
-            <div class="">
-                <div class="row" id="">
-                    <div class="col" id="">
-                        <div class="" data-block-type="2" id="">
-                            <div class="" id="">
-                                <p class="text-center">
-                                    Copyright 2014 DaoCloud.&nbsp;
-                                </p>
+                                <!--
+                                <span class="signup-btn-alt btn">
+                                    Sign Up
+                                </span> -->
+                                <div class="scrnsht">
+                                    <img class="img-responsive signup-btn" src="images/signup-btn.png" alt="sign up button" >
+                                    <img class="img-responsive" src="images/user-profile-img.png" alt="">
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
-        </footer> 
-    </body>
+        </section>
+        <section id="row3-section" class="section">
+            <div class="container">
+                <div class="row">
+                    <div id="rsrcs-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
+                        <div class="row">
+                            <div class="div col-lg-11 col-md-11 col-sm-11 col-xs-11 center-block inner-container end-pad">
+                                <span class="title-container">
+                                    <span class="sec-num-container"><span class="sec-num">2</span></span>
+                                    <h3 class="sec-title">Connect with friends & family</h3>
+                                </span>
+                                <img class="img-responsive signup-btn" src="images/signup-btn.png" alt="sign up button" >
+                                <!--<span class="signup-btn-alt btn">Sign Up</span> -->
 
+                                <div class="scrnsht">
+                                    <img class="img-responsive" src="images/rsrcs-ntwrk-img.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="row4-section" class="section">
+            <div class="container">
+                <div class="row">
+                    <img class="hidden-xs " src="images/yoga-character.png">
+                    <div id="ftrs-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
+                        <div class="row">
+                            <div class="div col-lg- col-md-11 col-sm-11 col-xs-11 center-block inner-container end-pad">
+                                <div class="div row">
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-11 center-block-xs-sm col-lg-offset-5 col-md-offset-5 col-sm-offset-5">
+                                        <h2>
+                                         DaoCloud is Built for<br> Wellness Professionals<br> Just Like You!    
+                                        </h2>
+                                        <span class="btn btn-ftr ">Learn About Professional Features</span> 
+                                    </div>
+
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="row5-section" class="section">
+            <div class="container">
+                <div class="row">
+                    <div id="srch-ftr-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
+                        <div class="row">
+                            <div class="div col-lg-11 col-md-11 col-sm-11 col-xs-11 center-block inner-container end-pad">
+                                <span class="title-container">
+                                    <span class="sec-num-container"><span class="sec-num">4</span></span>
+                                    <h3 class="sec-title">Find Trusted Wellness Professionals</h3>
+                                </span>
+                                
+
+                                <!--
+                                <span class="signup-btn-alt btn">
+                                    Sign Up
+                                </span> -->
+                                <div class="scrnsht">
+                                    <img class="img-responsive signup-btn" src="images/signup-btn.png" alt="sign up button" >
+                                    <img class="img-responsive" src="images/srch-ftr-img.png" alt="">
+                                </div>
+                                <div class="clearfix"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="row6-section" class="section">
+            <div class="container">
+                <div class="row">
+                    <img class="hidden-xs" src="images/greenpants.png">
+                    <img class="hidden-xs" src="images/farmer.png">
+                    <div id="getplaced-row" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="div col-lg- col-md-11 col-sm-11 col-xs-11 center-block inner-container">
+                                <div class="div row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-11 col-lg-offset-2 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-1 center-block ">
+                                        <span class="btn btn-gpl ">Professionals: Get Placed on the Map Today! </span> 
+                                    </div>
+
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+            <section id="row7-section" class="section">
+            <div class="container">
+                <div class="row">
+                    <div id="sbscrb-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
+                        <div class="row">
+                            <div class="div col-lg- col-md-11 col-sm-11 col-xs-11 center-block inner-container end-pad">
+                                <div class="div row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                                        <div class="scrb-frm-ctr">
+                                            <h3>
+                                             Daocloud is adding features everday!<br>
+                                             Stay up-to-date by subscribing to our newsletter:
+                                            </h3>
+                                        </div>
+                                        <div class="scrb-frm-ctr">
+                                            <input type="text" placeholder="youremail@gmail.com">
+                                        </div>
+                                        <div class="scrb-frm-ctr scrb-btn-ctr">
+                                            <span class="btn">Subscribe now</span>
+                                        </div>
+                                    </div>
+
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <footer id="footer" class="section">
+            <div class="container">
+                <div class="row">
+                    <div id="footer-row" class="col-lg-12 col-md-12- col-sm-12-col-xs-12">
+                        <div class="footer-links">
+                           <li><a href="">Terms &amp; Conditions</a></li>
+
+                           <li><a href="">Privacy Policy</a></li>
+                           <li><a href="">Contact Daocloud</a></li>
+                        </div>            
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
