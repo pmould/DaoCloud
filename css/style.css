@@ -2322,7 +2322,8 @@ h1, h2, h3, h4, span {
   border: 3px solid #0a3153;
   padding-left: 51px;
   padding-right: 51px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
   .btn:hover, input[type="submit"]:hover {
     color: #0a3153;
     background-image: -webkit-linear-gradient(#ffffe5 0%, #ffff66 10%, #cfdb00 25%, #e5e500 80%, #cccc00 100%);
