@@ -89,7 +89,6 @@ h1, h2, h3, h4, span
 	position: absolute
 	top: 30%
 	left: 50%
-	width: 15.75vw
 	text-align: center
 	margin-left: -9% !important
 	padding: 2.4%
@@ -119,6 +118,7 @@ h1, h2, h3, h4, span
 	padding-right: 51px
 	font-weight: bold
 	text-align: center
+	cursor: pointer
 
 	&:hover
 		color: $fgColor
@@ -195,6 +195,8 @@ header.navbar
 /************** Signup & Request Section Styles ******************/	
 #row1-section
 	padding-top: 50px
+	.btn
+		width: 15.75vw
 .inner-container
 	margin: 0px auto
 #signup-row
@@ -254,6 +256,13 @@ header.navbar
 	//font-size: 2vw
 .signup-btn
 	float: right
+.signup-btn2
+	position: relative
+	display: inline-block
+	padding: 1% 2.4%
+	float: right
+	min-width: 60px
+	width: 15.75vw
 .signup-btn-alt
 	margin-top: 10px
 	float: right	
@@ -275,6 +284,9 @@ header.navbar
 			position: relative
 			margin-right: 90px
 			z-index: 100 */
+	.signup-btn2
+		top: 15vw
+		right: 7.75vw
 	.scrnsht
 		margin-top: -18vw
 		float: left
@@ -291,6 +303,8 @@ header.navbar
 		width: 15vw
 		min-width: 75px
 		//width: 100%
+	.signup-btn2
+		top: 20px
 	.scrnsht img
 		width: 100%
 
@@ -337,6 +351,8 @@ header.navbar
 			position: relative
 			margin-right: 90px
 			z-index: 100 */
+	.signup-btn2
+		top: 14.5vw
 	.scrnsht
 		margin-top: -18vw
 		float: right
@@ -578,6 +594,9 @@ textarea
 	#userprof-row .signup-btn
 		top: 20vh
 		right: 8.5vh
+		#userprof-row .signup-btn2
+		top: 20vh
+		right: 8.5vh
 	// 6. LAYOUT 				==============================
 	// 7. VENDOR-SPECIFIC 		==============================
 	// 8. MODERNIZR 			==============================
@@ -623,6 +642,7 @@ textarea
 	// 8. MODERNIZR 			==============================
 	// 9. TEMPLATE SPECIFICS 	==============================
 @media (min-width:0px) and (max-width: $screen-xs)
+		
 	#signup-row
 		text-align: center
 		h2
@@ -644,11 +664,20 @@ textarea
 		position: relative
 		width: auto
 		padding: 0px
+	.btn
+		border-radius: 7px
+		border: 2.5px solid $fgColor
+	.signup-btn2
+		font-size: 8px
 	#userprof-row 
 		.title-container
 			padding-bottom: 26px
 		.signup-btn
 			right: 3vw
+		.signup-btn2
+			top: 13.25vw
+			right: 4.75vw
+	
 	#rsrcs-row
 		.sec-title
 			padding-top: 10px
